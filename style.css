@@ -1,11 +1,11 @@
-body {margin: 0; background-color: #222;}
+body {margin: 0; background-color: #22223B;}
 
 ul.topnav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #4A4E69;
 }
 
 ul.topnav li {float: left;}
@@ -20,7 +20,7 @@ ul.topnav li a {
 
 ul.topnav li a:hover:not(.active) {background-color: #111;}
 
-ul.topnav li a.active {background-color: #4CAF50;}
+ul.topnav li a.active {background-color: #9A8C98;}
 
 ul.topnav li.right {float: right;}
 
