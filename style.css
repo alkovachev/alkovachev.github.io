@@ -1,11 +1,23 @@
-body {margin: 0; background-color: #22223B;}
+/*-------------------------------------------*\
+Alex Kovachev Portfolio Website 
+
+Index
+- Sitewide
+  - Fonts
+  - Headers
+  - Buttons
+  - Grid
+- Logo
+- 
+\*-------------------------------------------*/
+body {margin: 0; background-color: #082032; font-family: roboto, sans-serif}
 
 ul.topnav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #4A4E69;
+  background-color: #2C394B;
 }
 
 ul.topnav li {float: left;}
@@ -16,11 +28,13 @@ ul.topnav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-weight: bold;
+
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #111;}
+ul.topnav li a:hover:not(.active) {background-color: #334756;}
 
-ul.topnav li a.active {background-color: #9A8C98;}
+ul.topnav li a.active {background-color: #FF4C29;}
 
 ul.topnav li.right {float: right;}
 
