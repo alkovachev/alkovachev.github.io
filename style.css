@@ -16,16 +16,16 @@ Index
 | Sitewide
 \*-------------------------------------------*/
 body {
-  margin: 0; 
-  background-color: #082032; 
+  margin: 30px; 
+  background-color: #121212; 
   font-family: roboto, sans-serif;
   color: white;
 }
-
+/* Logo */
 .header {
   padding: 50px;
-  text-align: center;
-  background: #1abc9c;
+  text-align: left;
+  background: #121212;
   color: white;
 }
 
@@ -34,13 +34,12 @@ body {
   height: auto;
 }
 
-/* Style the top navigation bar */
+/* Navigation */
 .navbar {
   overflow: hidden;
   background-color: #333;
 }
 
-/* Style the navigation bar links */
 .navbar a {
   float: left;
   display: block;
@@ -50,22 +49,84 @@ body {
   text-decoration: none;
 }
 
-/* Right-aligned link */
 .navbar a.right {
   float: right;
 }
 
-/* Change color on hover */
 .navbar a:hover {
   background-color: #ddd;
   color: black;
 }
 
+/* Footer */
 .footer {
-  padding: 20px; /* Some padding */
-  text-align: center; /* Center text*/
-  background: #ddd; /* Grey background */
+  padding: 20px; 
+  text-align: right; 
+  background-color: rgba(255, 255, 255, 0.05); 
 }
+/*-------------------------------------------*\
+| Grid
+\*-------------------------------------------*/
+.grid {
+  display: grid;
+  grid-template-columns: 70% auto;
+  grid-gap: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  margin: 10px;
+  position:relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 30px;
+  
+}
+
+.grid > .photo {
+
+  text-align: center;
+  width: 100%;
+  position: relative; /* for coming soon overlay*/
+  
+}
+
+.grid > .notes {
+  background-color: rgba(255, 255, 255, 0.05);
+  text-align: Left;
+  border-radius: 0 30px 30px 0;
+  padding: 20px;
+  
+}
+
+/* Coming soon overlay - Edit */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 30px 0 0 30px;
+  
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0 , 0, 0.8) ;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px 0 0 30px;
+  
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 /*-------------------------------------------*\
 | ||
 \*-------------------------------------------*/
